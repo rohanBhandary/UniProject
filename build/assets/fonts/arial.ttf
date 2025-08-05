@@ -1,0 +1,19 @@
+# This is a placeholder file for arial.ttf
+# 
+# IMPORTANT: You need to replace this file with a real TTF font.
+# 
+# To get a real font file:
+# 1. Download a free TTF font (like Liberation Sans, DejaVu Sans, or Arial)
+# 2. Rename it to "arial.ttf" and place it in this directory
+# 
+# Free font options:
+# - Liberation Sans: https://github.com/liberationfonts/liberation-fonts
+# - DejaVu Sans: https://dejavu-fonts.github.io/
+# - Open Sans: https://fonts.google.com/specimen/Open+Sans
+# 
+# For Windows users:
+# - Copy C:\Windows\Fonts\arial.ttf to this directory
+# 
+# For Linux users:
+# - sudo apt install fonts-liberation
+# - cp /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf assets/fonts/arial.ttf 
