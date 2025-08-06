@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/BankingSystem.dir/link.d"
+  "BankingSystem"
+  "BankingSystem.pdb"
+  "CMakeFiles/BankingSystem.dir/src/Account.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/Account.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/Bank.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/Bank.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/AccountScreen.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/AccountScreen.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/AdminPanel.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/AdminPanel.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/Button.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/Button.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/DashboardScreen.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/DashboardScreen.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/LoginScreen.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/LoginScreen.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/Screen.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/Screen.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/TextField.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/TextField.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/TransactionScreen.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/TransactionScreen.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/TransferScreen.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/TransferScreen.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/GUI/Window.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/GUI/Window.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/Transaction.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/Transaction.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/User.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/User.cpp.o.d"
+  "CMakeFiles/BankingSystem.dir/src/main.cpp.o"
+  "CMakeFiles/BankingSystem.dir/src/main.cpp.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/BankingSystem.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

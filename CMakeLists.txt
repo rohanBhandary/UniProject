@@ -55,5 +55,7 @@ target_link_libraries(BankingSystem
     SDL2_image
 )
 
-# Copy assets
-file(COPY assets DESTINATION ${CMAKE_BINARY_DIR}) 
+# Copy assets if they exist
+if(EXISTS "${CMAKE_SOURCE_DIR}/assets")
+    file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
+endif() 
