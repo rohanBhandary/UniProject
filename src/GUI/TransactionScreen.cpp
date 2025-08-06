@@ -133,7 +133,7 @@ void TransactionScreen::renderTransactionList() {
         }
         
         // Format date
-        std::string dateStr = transaction->getDate();
+        std::string dateStr = transaction->getFormattedTimestamp();
         if (dateStr.length() > 10) dateStr = dateStr.substr(0, 10);
         
         // Format amount

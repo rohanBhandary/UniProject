@@ -9,7 +9,7 @@
 #include <iomanip>
 
 AdminPanel::AdminPanel(std::shared_ptr<Window> window, std::shared_ptr<Bank> bankSystem)
-    : Screen(window, "Admin Panel"), bank(bankSystem), showMessage(false), messageTimer(0) {
+    : Screen(window, "Admin Panel"), bank(bankSystem), messageVisible(false), messageTimer(0) {
 }
 
 void AdminPanel::initialize() {
@@ -195,7 +195,7 @@ void AdminPanel::renderAccountList() {
         std::string balanceStr = "$" + std::to_string(static_cast<int>(account->getBalance()));
         
         window->renderText(account->getAccountNumber(), 50, startY, window->getFont(), window->getTextColor());
-        window->renderText(account->getHolderName(), 200, startY, window->getFont(), window->getTextColor());
+        window->renderText(account->getAccountHolderName(), 200, startY, window->getFont(), window->getTextColor());
         window->renderText(account->getAccountTypeString(), 350, startY, window->getFont(), window->getTextColor());
         window->renderText(balanceStr, 450, startY, window->getFont(), window->getTextColor());
         
@@ -239,17 +239,17 @@ void AdminPanel::handleRefresh() {
 
 void AdminPanel::showMessage(const std::string& msg) {
     message = msg;
-    showMessage = true;
+    messageVisible = true;
     messageTimer = 180; // Show for 3 seconds at 60 FPS
 }
 
 void AdminPanel::clearMessage() {
-    showMessage = false;
+    messageVisible = false;
     message.clear();
 }
 
 void AdminPanel::renderMessage() {
-    if (showMessage && !message.empty()) {
+    if (messageVisible && !message.empty()) {
         window->renderCenteredText(message, 550, window->getFont(), window->getAccentColor());
     }
 } 

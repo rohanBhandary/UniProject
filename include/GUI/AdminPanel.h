@@ -18,7 +18,7 @@ private:
     
     std::string searchQuery;
     std::string message;
-    bool showMessage;
+    bool messageVisible;
     int messageTimer;
 
 public:
